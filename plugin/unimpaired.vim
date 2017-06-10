@@ -32,8 +32,8 @@ endfunction
 
 call s:MapNextFamily('a','')
 call s:MapNextFamily('b','b')
-call s:MapNextFamily('l','l')
-call s:MapNextFamily('q','c')
+call s:MapNextFamily('h','l')
+call s:MapNextFamily('u','c')
 call s:MapNextFamily('t','t')
 
 function! s:entries(path)
@@ -103,10 +103,10 @@ nmap [o <Plug>unimpairedOPrevious
 " }}}1
 " Diff {{{1
 
-nmap [n <Plug>unimpairedContextPrevious
-nmap ]n <Plug>unimpairedContextNext
-omap [n <Plug>unimpairedContextPrevious
-omap ]n <Plug>unimpairedContextNext
+nmap [d <Plug>unimpairedContextPrevious
+nmap ]d <Plug>unimpairedContextNext
+omap [d <Plug>unimpairedContextPrevious
+omap ]d <Plug>unimpairedContextNext
 
 nnoremap <silent> <Plug>unimpairedContextPrevious :call <SID>Context(1)<CR>
 nnoremap <silent> <Plug>unimpairedContextNext     :call <SID>Context(0)<CR>
@@ -466,10 +466,10 @@ endfunction
 
 call UnimpairedMapTransform('string_encode','[y')
 call UnimpairedMapTransform('string_decode',']y')
-call UnimpairedMapTransform('url_encode','[u')
-call UnimpairedMapTransform('url_decode',']u')
-call UnimpairedMapTransform('xml_encode','[x')
-call UnimpairedMapTransform('xml_decode',']x')
+call UnimpairedMapTransform('url_encode','[x')
+call UnimpairedMapTransform('url_decode',']x')
+call UnimpairedMapTransform('xml_encode','[m')
+call UnimpairedMapTransform('xml_decode',']m')
 
 " }}}1
 

@@ -23,16 +23,16 @@ is "args" and for the "q" commands is "quickfix".
 *]b*     |:bnext|
 *[B*     |:bfirst|
 *]B*     |:blast|
-*[l*     |:lprevious|
-*]l*     |:lnext|
-*[L*     |:lfirst|
-*]L*     |:llast|
+*[h*     |:lprevious|
+*]h*     |:lnext|
+*[H*     |:lfirst|
+*]H*     |:llast|
 *[<C-L>* |:lpfile|
 *]<C-L>* |:lnfile|
-*[q*     |:cprevious|
-*]q*     |:cnext|
-*[Q*     |:cfirst|
-*]Q*     |:clast|
+*[u*     |:cprevious|
+*]u*     |:cnext|
+*[U*     |:cfirst|
+*]U*     |:clast|
 *[<C-Q>* |:cpfile| (Note that <C-Q> only works in a terminal if you disable
 *]<C-Q>* |:cnfile| flow control: stty -ixon)
 *[t*     |:tprevious|
@@ -48,13 +48,13 @@ is "args" and for the "q" commands is "quickfix".
 ]f                      Go to the file succeeding the current one
                         alphabetically in the current file's directory.
 
-                                                *[n*
-[n                      Go to the previous SCM conflict marker or diff/patch
-                        hunk.  Try d[n inside a conflict.
+                                                *[d*
+[d                      Go to the previous SCM conflict marker or diff/patch
+                        hunk.  Try d[d inside a conflict.
 
-                                                *]n*
-]n                      Go to the next SCM conflict marker or diff/patch hunk.
-                        Try d]n inside a conflict.
+                                                *]d*
+]d                      Go to the next SCM conflict marker or diff/patch hunk.
+                        Try d]d inside a conflict.
 
 LINE OPERATIONS                                 *unimpaired-lines*
 
